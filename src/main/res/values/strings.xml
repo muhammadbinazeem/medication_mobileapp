@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="email">Email</string>
+    <string name="signin">SignIn</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot">Forget Password?</string>
+    <string name="signUp">signup</string>
+    <string name="sign_Up">signup</string>
+    <string name="newstring">add</string>
+    <string name="list">view</string>
+    <string name="list_edit">edit_ptofile</string>
+</resources>

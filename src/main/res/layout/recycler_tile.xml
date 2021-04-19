@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20px"
+    android:paddingLeft="10px"
+    android:paddingRight="10px"
+    android:elevation="0dp"
+    app:layout_constraintCircleRadius="10px"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="40px"
+        android:elevation="0dp"
+        android:background="@color/cardview_light_background">
+
+        <RelativeLayout
+            android:layout_width="403dp"
+            android:layout_height="match_parent"
+            android:background="#1A000000"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10px"
+                android:src="@drawable/medicine" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="171dp"
+                android:layout_height="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@id/profileImage"
+                android:fontFamily="sans-serif-condensed"
+                android:text="category"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/price"
+                android:layout_toRightOf="@+id/price"
+                android:text="TextView"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/profileImage"
+                android:layout_toRightOf="@+id/profileImage"
+                android:text="TextView"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/size"
+                android:layout_toRightOf="@+id/size"
+                android:text="TextView"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/pharmaName"
+                android:layout_width="188dp"
+                android:layout_height="21dp"
+                android:textSize="18dp"
+                android:layout_below="@+id/title"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="35dp"
+                android:layout_toEndOf="@+id/profileImage"
+                android:layout_toRightOf="@+id/profileImage"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="TextView" />
+
+            <ImageButton
+                android:id="@+id/bookBtn"
+                android:layout_width="34dp"
+                android:layout_height="36dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="324dp"
+                android:layout_marginLeft="324dp"
+                android:layout_marginTop="29dp"
+                android:baselineAlignBottom="false"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/booking" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
